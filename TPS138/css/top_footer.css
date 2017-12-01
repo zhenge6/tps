@@ -1,0 +1,362 @@
+/*顶部公告区*/
+#notice{
+	width:100%;
+	position: relative;
+}
+#notice a img{
+	width:100%;
+}
+#notice .icon-x{
+	font-size: 16px;
+	line-height: 16px;
+	position: absolute;
+	top:8px;
+	right:288px;
+	background: gainsboro;
+	opacity: 0.3;
+	color: block;
+	cursor: pointer;
+}
+/*公告区结束*/
+
+
+/*顶部区域--国家`登陆注册一栏的背景区*/
+#topbox{
+	width:100%;
+	height:38px;
+	/*background:green;*/
+	background: rgb(241, 241, 241);
+	border-bottom: 1px solid gainsboro;
+	z-index: 1;
+	font-size: 10px;
+}
+/*国家`登陆注册一栏*/
+#topnav{
+	height:38px;
+}
+
+/*左侧*/
+/*国家区域的li*/
+#topnav .diqu>li{
+	width:72px;
+	height:38px;
+	line-height: 38px;
+	position: relative;
+	border: 1px solid transparent; /*边框背景色透明*/
+	border-bottom:none ;
+	float: left;
+	margin:0px 30px 0px 0px ;
+	z-index: 5;
+}
+/*下拉列表里面的国家*/
+.diqu .op{
+	position: absolute;
+	top:37px;
+	left:-1px;
+	width:92px;
+	border: 1px solid darkgray;
+	border-top: none;
+	display: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 4;
+	background: white;
+}
+/*包含国旗的所有的li,公共样式*/
+#topnav .guoqi{
+	display: inline-block;
+	width:16px;
+	height:11px;
+	margin-right: 6px;
+}
+/*中国背景图*/
+#topnav .guoqi_cn{
+	background: url(../img/ico-index-flag.png) no-repeat 0px  -10px;
+}
+/*香港背景图*/
+.guojia .guoqi_HK{
+	background: url(../img/ico-index-flag.png) no-repeat 0px -23px ;
+}
+/*美国*/
+.guojia .guoqi_USA{
+	background: url(../img/ico-index-flag.png) no-repeat 0px 0px ;
+}
+/*韩国*/
+.guojia .guoqi_HG{
+	background: url(../img/ico-index-flag.png) no-repeat 0px -35px ;
+}
+/*用于给划过的a添加样式,jQ*/
+#topnav .op>li .huaguo{
+	color:red;
+}
+#topnav .login:hover,.register:hover{
+	text-decoration: underline;
+}
+.huilu .bizhong{
+	display: inline-block;
+	margin-right: 8px;
+	text-align: center;
+}
+/*文字旁边三角形*/
+#topnav .icon-x1{
+	font-size: 10px;
+	float:right;
+}
+/*li划过效果*/
+#topnav  .hover{
+	background: white;
+	border: 1px solid darkgray;
+	border-bottom:none ;
+}
+/*左侧结束*/
+
+/*右侧开始*/
+
+#topnav .rigth_geren{
+	float: right;
+}
+#topnav .rigth_geren li{
+	float: left;
+	height:38px;
+	text-align: center;
+	line-height: 38px;
+	margin-right: 25px;
+}
+/*登陆注册默认是红色*/
+.rigth_geren .login,.register{
+	color: red;
+}
+/*个人中心*/
+.rigth_geren li:last-child{
+	position: relative;
+	width:50px;
+	border: 1px solid transparent;
+	border-bottom: none;
+}
+.rigth_geren li:last-child ul{
+	position: absolute;
+	top:38px;
+}
+.rigth_geren li:last-child ul{
+	margin: 0;
+	position: absolute;
+	top:38px;
+	left:-1px;
+	width:92px;
+	height:auto;
+	border: 1px solid darkgray;
+	border-top: none;
+	display: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 4;
+}
+
+/*下载手机版区*/
+#appCodeImg{
+	display: inline-block;
+	width:12px;
+	height:18px;
+	margin-top: 9px;
+	margin-right: 3px;
+	float: left;
+	background: url(../img/appCodeImg.png) no-repeat 0px 0px;
+}
+#appErCode{
+	display: inline-block;
+	width:120px;
+	height:136px;
+	background: url(../img/appCodeImg.png) no-repeat -47px 0px;
+}
+.rigth_geren .phone{
+	position: relative;
+}
+.rigth_geren .phone ul{
+	position: absolute;
+	top:38px;
+	left:0px;
+	display: none;
+	z-index: 100;
+}
+#topnav .rigth_geren .phone ul>li{
+	width:120px;
+	height:131px;
+	border: 1px solid gainsboro;
+	border-top:none ;
+	margin-top: 8px;
+}
+#topnav .rigth_geren .phone ul>li #appErCode{
+	position: absolute;
+	top:-5px;
+	left:0px;
+}
+/*topnav 右侧结束*/
+
+/*logo 搜索  购物车开始*/
+#topCenter{
+	height:85px;
+	padding: 60px 0px 65px 0px;	
+}
+#logo a{
+	display: block;
+	float: left;
+}
+#logo{
+	overflow: hidden;
+	float: left;
+}
+/*包裹搜索框及下面的内容的div*/
+#search{
+	float: left;
+}
+/*包裹input的div*/
+#txt{
+	width:510px;
+	overflow: hidden;
+	margin: 0px 145px 0px 145px;
+	position: relative;
+	float: left;
+}
+/*input*/
+#inp{
+	width:510px;
+	height:50px;
+	border: 2px solid #163672;
+	outline: none;
+	padding: 0px 70px 0px 12px;
+	/*float: left;*/
+}
+/*搜索图标*/
+#txt .icon-sousuo{
+	width:60px;
+	height:50px;
+	cursor: pointer;
+	position: absolute;
+	right:2px;
+	top:0px;
+	background: #163672;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+}
+/*购物车*/
+#shopCart{
+	float: right;
+}
+#shopCart a{
+	display: block;
+	width:110px;
+	height:35px;
+	text-align: right;
+	font-size: 16px;
+	line-height: 35px;
+	background: #ececec;
+	padding: 5px 20px 5px 5px;
+	color: #666666;
+	position: relative;
+}
+/*购物车图标*/
+#shopCart a .icon-gouwuche{
+	font-size: 20px;
+	float: left;
+	width:35px;
+	height:35px;
+	background: white;
+	text-align: center;
+	line-height: 35px;
+}
+/*搜索框下面的内容*/
+#recommend{
+	width:510px;
+	/*background: green;*/
+	margin-top: 42px;
+	margin-left: 145px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/* 购物车上面的数字区*/
+#n{
+	display: inline-block;
+	width:10px;
+	height:12px;
+	border-radius: 5px;
+	background: #ee4242;
+	font-size: 10px;
+	text-align: center;
+	line-height: 12px;
+	color: white;
+	position: absolute;
+	top: -6px;
+	left: 16px;
+}
+/*logo 搜索  购物车结束*/
+
+/*选项卡区开始*/
+#TabControl_Box{
+	height:46px;
+}
+#uls_box>li{
+	height:45px;
+	line-height: 45px;
+	/*background: #163672;*/
+	float: left;
+	margin-left: 68px;
+}
+#uls_box #Tab_Box{
+	margin: 0;
+	background:  #163672;
+	color: white;
+	padding: 0px 30px 0px 33px;
+	position: relative;
+}
+/*gif动图*/
+#uls_box #remai{
+	background: url(../img/hot.gif) no-repeat center center;
+}
+#uls_box #quanqiugou,#guanyu{
+	background: url(../img/new.gif) no-repeat center center;
+}
+#uls_box .par{
+	position: relative;
+}
+#uls_box .par .child{
+	display: inline-block;
+	width:9px;
+	height:14px;
+	position: absolute;
+	top:0;
+	left:20px;
+}
+/*选项卡下面的边框*/
+#headertop{
+	border-bottom: 2px solid #163672;
+}
+
+#xuanxiangka{
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width:167px;
+	text-align: center;
+	line-height: auto;
+	background: rgba(22,54,114,0.9);
+}
+#xuanxiangka dd{
+	width:1000px;
+	height:520px;
+	overflow: hidden;
+	position: absolute;
+	top: 3px;
+	left: 167px;
+	color: black;
+	background: orange;
+	display: none;
+}
+#xuanxiangka dd ul{
+	color:black;
+}
+#xuanxiangka dd ul li{
+	float: left;
+	width:100px;
+}

@@ -1,0 +1,193 @@
+<!--最上部公告区-->
+<div id="notice">
+	<a href="#"><img src="../img/fr.jpg" alt="" title="公告"/></a>
+	<i class="iconfont icon-x"></i>
+</div>
+<div id="headertop">
+	<div id="topbox">
+		<div id="topnav"class="center">
+			<ul class="diqu">
+				<li class="guojia list">
+					<!--类名con表示a--span的内容,方便点击事件的处理-->
+					<a href="javascript:;" class="down">
+						<span class="guoqi_cn guoqi"></span>
+						<span class="con1">中国</span>
+					</a>
+					<i class="iconfont icon-x1"></i>
+					<ul class="op">
+						<li>
+							<a href="javascript:;">
+								<span class="guoqi_cn guoqi"></span>
+								<span class="con">中国</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="guoqi_HK guoqi"></span>
+								<span class="con">HK香港</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="guoqi_USA guoqi"></span>
+								<span class="con"span>U.S.A</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="guoqi_HG guoqi"></span>
+								<span class="con"span>한국</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="guoqi_Other"></span>
+								<span class="con">Other</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="huilu list">
+					<a href="javascript:;" class="bizh">
+						<span class="bizhong">¥</span>
+						<span class="con1">人民币</span>
+					</a>
+					<i class="iconfont icon-x1"></i>
+					<ul class="option op">
+						<li>
+							<a href="javascript:;">
+								<span class="bizhong">¥</span>
+								<span class="con">人民币</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="bizhong">HK$</span>
+								<span class="con">港币</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="bizhong">₩</span>
+								<span class="con">韩币</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<span class="bizhong">$</span>
+								<span class="con">美元</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!--op用于方便给划过的每个li加划过效果-->
+			<ul class="rigth_geren op">
+				<li class="phone">
+					<a href="javascript:;">
+						<span id="appCodeImg"></span>
+						<span class="download">下载手机TPS</span>
+					</a>
+					<ul>
+						<!--二维码-->
+						<li>
+							<a href="">
+								<span id="appErCode"></span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="login">登录</span>
+					</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="javascript:;">
+						<span class="register">注册</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="attention">我关注的(<span>0</span>)</span>
+					</a>
+				</li>
+				<li class="list">
+					<a href="javascript:;">
+						<span class="percenter">个人中心</span>
+					</a>
+					<i class="iconfont icon-x1"></i>
+					<ul class="op">
+						<li>
+							<a href="javascript:;">
+								<span>我的订单</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul> 
+		</div>
+	</div>
+	<!--logo--搜索区-->
+	<div class="center" id="topCenter">
+		<div id="logo">
+			<a href="javascript:;">
+				<img src="../img/newTpsLogo.png" alt="" />
+			</a>
+			<a href="javascript:;">
+				<img src="../img/newTpsLogo2.png" alt="" />
+			</a>
+		</div>
+		<div id="search">
+			<!--搜索框-->
+			<div id="txt">
+				<input type="search" id="inp"/>
+				<i class="iconfont icon-sousuo"></i>
+			</div>
+			 <!--搜索框下面的推荐--从后台获取数据-->
+			<div id="recommend">
+			</div>
+		</div>
+		<!--购物车-->
+		<div id="shopCart">
+			<a href="javascript:;">
+				<span id="n">0</span>
+				<i class="iconfont icon-gouwuche"></i>
+				<span>购物车</span>
+			</a>
+		</div>
+	</div>
+	<!--头部最下面---选项卡区,商品分类-->
+	<div class="center" id="TabControl_Box">
+		<ul id="uls_box">
+			<li id="Tab_Box">
+				<!--菜单图标-->
+				<i class="iconfont icon-caidan"></i>
+				全部商品分类
+				<div id="xuanxiangka">
+					<!--此处数据通过json动态获取,动态创建-->
+				</div>
+			</li>
+			<li>商城首页</li>
+			<li>新品上市</li>
+			<!--par  child 类名方便定位使用-->
+			<li class="par">
+				<span id="remai" class="child"></span>
+				口碑热卖
+			</li>
+			<li>特惠专场</li>
+			<li>售后服务</li>
+			<li class="par">
+				<span id="quanqiugou" class="child"></span>
+				全球购
+			</li>
+			<li class="par">
+				<span id="guanyu" class="child"></span>
+				关于我们
+			</li>
+		</ul>
+	</div>
+</div>
+
+
